@@ -1,0 +1,36 @@
+.codePage {
+  background-color: #30353e;
+  height: 100vh;
+}
+.codeHeader {
+  background-color: #30353e;
+  padding: 10px 20px;
+  margin-bottom: 10;
+}
+.codeHeaderContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.codeHeaderLogoTitle {
+  color: white;
+}
+.codeControlPanel {
+  background-color: #30353e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.codeControlPanelIcons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  flex-direction: column;
+}
+.codeControlPanelIcon {
+  padding: 20px;
+  border-bottom: 2px solid black;
+  width: 100%;
+}
