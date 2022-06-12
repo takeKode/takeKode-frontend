@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { useRouter } from "next/router";
-import { Button } from "@nextui-org/react";
+import { Button, NextUIProvider } from "@nextui-org/react";
 
 const CustomHead = () => (
   <Head>
@@ -18,13 +18,15 @@ const Home: NextPage = () => {
     router.push("/code");
   };
   return (
-    <div className={styles.container}>
-      <CustomHead />
-      <main>
-        <h1>Welcome to takeKode!</h1>
-      </main>
-      <Button onClick={handleShareCodeClick}>Share code</Button>
-    </div>
+    <NextUIProvider>
+      <div className={styles.container}>
+        <CustomHead />
+        <main>
+          <h1>Welcome to takeKode!</h1>
+        </main>
+        <Button onClick={handleShareCodeClick}>Share code</Button>
+      </div>
+    </NextUIProvider>
   );
 };
 
